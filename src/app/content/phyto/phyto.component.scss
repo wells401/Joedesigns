@@ -1,0 +1,102 @@
+$light-white:transparent;
+$white:#FFFFFF;
+
+.content{
+  height:fit-content;
+  width:100%;
+  background: $white;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $white, #Fefefe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $white, #Fefefe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 150px 2rem;
+}
+
+
+
+.header-portfolio{
+  width:100%;
+  height:fit-content;
+  background-color: #141618;}
+
+  img{
+    height:cover;
+    width:100%!important;
+  }
+
+  .banner{
+    padding: 150px 2rem;
+  }
+
+  .right-image{
+
+    box-shadow: 0 4px 4px 0 rgba(92,96,110,.05);
+    overflow-y: hidden;
+    background: #fcfdff;
+    border-radius: 10px;
+    border: 1px solid #e6e9f2;
+    width:auto!important;
+    margin-right:-200px;
+    margin-top:8px;
+    align-items: flex-end;
+    margin: -300px 0 0 -190px;
+  }
+
+
+
+  .right-image-colour{
+
+    box-shadow: 0 4px 4px 0 rgba(92,96,110,.05);
+    overflow-y: hidden;
+    border-radius: 10px;
+    width:1300px;
+    margin-right:-200px;
+    margin-top:8px;
+    align-items: flex-end;
+    position: relative;
+    margin: 0 0 0;
+  }
+
+
+  @media screen and (max-width:800px){
+.right-image{
+  box-shadow: 0 4px 4px 0 rgba(92,96,110,.05);
+  overflow-y: hidden;
+  border-radius: 10px;
+  width:330px!important;
+  margin-right:-200px;
+  margin-top:8px;
+  align-items: flex-end;
+  position: relative;
+  margin: 0 0 0;
+
+
+}
+}
+
+
+
+
+
+  .btn {
+      border: none;
+      background-color: inherit;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+      color:#333333;
+      -webkit-transition-duration: 0.4s; /* Safari */
+     transition-duration: 0.4s;
+  }
+
+  /* On mouse-over */
+  .btn:hover {
+    background:#e62117;
+    color:#ffffff;
+  }
+
+
+  .btn:target{
+    color:#FFFFFF;
+    background-color:#e62117;
+
+  }

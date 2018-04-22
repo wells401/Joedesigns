@@ -1,0 +1,255 @@
+$light-white:transparent;
+$white:#FFFFFF;
+
+
+.canstar{
+  color:#007a87;
+  font-weight:800;
+}
+
+.canstar:hover{
+   cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+  color:#62b206;
+}
+
+*{
+  box-sizing:border-box;
+}
+.navigation{
+  background-color:$light-white;
+}
+.content{
+  height:fit-content;
+  width:100%;
+  background: $white;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $white, #Fefefe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $white, #Fefefe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px 2rem;
+}
+
+.projects{
+  background-color:#FFFFFF;
+  width: 100%;
+}
+
+.project #tag{
+
+  color:#FFFFFF!important;
+}
+
+#main{
+  text-align: left;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color:#333333;
+    -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+}
+
+/* On mouse-over */
+.btn:hover {
+  background:greenyellow;
+  color:#ffffff!important;
+}
+
+
+.btn:target{
+  color:#FFFFFF!important;
+  background-color:greenyellow;
+
+}
+
+
+
+.overlay{
+  height: 100vh;
+  width:100vw;
+  position: absolute;
+  top:20;
+  left:0;
+  z-index: 1;
+  opacity: 0.60;
+}
+
+.container{
+  max-width:960px;
+  margin-left:0.5rem;
+  margin: auto;
+  text-align:left;
+  padding-top:100px!important;
+  padding-bottom:100px!important;
+  z-index: 0;
+}
+.content-more{
+  align-items: center;
+  width:100%;
+}
+.content-more .left{
+  float: left;
+}
+
+.content-more .right{
+  float: right;
+}
+
+.container p{
+  width:80%;
+}
+
+.container h2{
+  width: 50%;
+}
+
+@keyframes colorchange
+{
+  0%   {color: #2C3A4E;}
+  25%  {color: -webkit-linear-gradient(to right, #0575e6, #021b79); /* Chrome 10-25, Safari 5.1-6 */}
+  50%  {color: -webkit-linear-gradient(to right, #9cecfb, #65c7f7, #0052d4); /* Chrome 10-25, Safari 5.1-6 */}
+  75%  {color: -webkit-linear-gradient(to right, #9cecfb, #65c7f7, #0052d4); /* Chrome 10-25, Safari 5.1-6 */}
+  100% {color:#00BA27; /* Chrome 10-25, Safari 5.1-6 */}
+}
+
+
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {color: #2C3A4E;}
+  25%  {color: #00695C;}
+  50%  {color: #4DB6AC;}
+  75%  {color: #009688;}
+  100% {color: #37DB67;}
+}
+
+
+h1{
+   animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+-webkit-animation: colorchange 10s; /* Chrome and Safari */
+color:#2C3A4E;
+
+}
+
+
+h2{
+  margin-top:100px;
+  font-size:40px;
+  font-weight:800;
+  font-style:black;
+  animation: colorchange 50s infinite; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+-webkit-animation: colorchange 50s; /* Chrome and Safari */
+
+}
+h3{
+  margin-top:60px;
+  font-size:120px;
+  color:#FFFFFF;
+}
+
+h5{
+  margin-top:100px;
+  color:#FFFFFF;
+
+}
+.project{
+  padding-top:100px;
+}
+
+a{
+  font-size:30px;
+  color:#FFFFFF;
+}
+
+.list{
+  padding-top:20px;
+}
+.span{
+  animation: colorchange 50s infinite; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+-webkit-animation: colorchange 50s!important; /* Chrome and Safari */
+}
+
+img{
+  height:cover;
+  width:100%;
+}
+
+
+.logo{
+  width:100%;
+}
+
+.row{
+  padding-top:100px;
+}
+.item{
+  background-color:blue;
+  width: calc(20% - 20px);
+}
+
+ul{
+  padding-top:50px;
+  text-decoration: none!important;
+  list-style-type: none;
+
+}
+
+a{
+  text-decoration: none!important;
+  font-size:1rem;
+  color:black;
+  float: left;
+  margin-right: 30px;
+  font-weight:900;
+
+}
+
+a:active{
+  color:#Fefefe;
+}
+
+a:hover{
+  animation: colorchange 50s infinite; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+-webkit-animation: colorchange 50s; /* Chrome and Safari */
+color:#37DB67;
+}
+
+//code needed to create a two column design on mobile single
+.col{
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  padding-bottom:150px;
+}
+//code needed to create a two column design on mobile single
+@media(max-width:960px){
+.col{
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+}
+
+
+@media(max-width:960px){
+  .container{
+  padding-right:3rem;
+  padding-left:3rem;
+
+  width:100%;
+  }
+  }
+
+  @media(max-width:960px){
+  .container p, h2{
+      width:100%!important;
+  }
+}
